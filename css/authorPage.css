@@ -1,0 +1,874 @@
+
+
+@media screen and (max-width: 767px){
+    section.slideArea{
+        display: none;
+    }
+
+    section.workArea{
+        padding-top: 35px; padding-bottom: 35px;
+    }
+    section.workArea h2{
+        display: none;
+    }
+    section.workArea ul li{
+        padding: 125px 1% 0; float: left; display: block;
+        text-align: center; background-repeat: no-repeat; background-size: 0 0, 105px 105px;
+        background-position: center top;
+    }
+    section.workArea ul li.active{
+        background-size: 105px 105px, 105px 0px;
+        animation: workAni 0.75s ease-in-out;
+    }
+    section.workArea ul li:nth-child(-n+3){
+        margin-bottom: 45px;
+    }
+    section.workArea ul li:nth-child(1){
+        background-image: url('../images/author_iconRocket_MT.png'), url('../images/author_iconRocket_GR.png');
+    }
+    section.workArea ul li:nth-child(2){
+        background-image: url('../images/author_iconComputer_MT.png'), url('../images/author_iconComputer_GR.png');
+    }
+    section.workArea ul li:nth-child(3){
+        background-image: url('../images/author_iconLight_MT.png'), url('../images/author_iconLight_GR.png');
+    }
+    section.workArea ul li:nth-child(4){
+        background-image: url('../images/author_iconMobile_MT.png'), url('../images/author_iconMobile_GR.png');
+    }
+    section.workArea ul li *:not(a){
+        color: #4e525d;
+    }
+    section.workArea ul li strong{
+        font-weight: 400; font-size: 22px; line-height: 24px; margin-bottom: 25px;
+        display: block;
+    }
+    section.workArea ul li p{
+        font-size: 14px; line-height: 26px;
+        width: 90%; text-align: center; margin: 0 auto 15px;
+    }
+    section.workArea ul li a{
+        background-color: #49cbcd; width: 40%; color: white;
+        line-height: 30px; border-radius: 5px; margin: 0 auto;
+        font-size: 14px;
+    }
+    @keyframes workAni{
+        0%{
+            background-size: 105px 0, 105px 105px;
+        }
+        100%{
+            background-size: 105px 105px, 105px 0px;
+        }
+    }
+    /*  ? workArea fin */
+    section.portfolioArea{
+        background-color: #f1f1f1; padding: 50px 2%;
+    }
+    section.portfolioArea div h2{
+        font-size: 35px; color: #4e525d; margin-bottom: 25px;
+        font-weight: 400; text-align: center;
+    }
+    section.portfolioArea div ul{
+        margin-bottom: 30px;
+    }
+    section.portfolioArea div ul li{
+        display: block; text-align: center;
+        background-size: cover; background-repeat: no-repeat;
+        background-position: left center;
+        opacity: 0; height: 0; overflow: hidden;
+        transition-property: opacity, height;
+        transition-duration:  0.75s;
+        transition-timing-function: ease-in-out;
+    }
+    section.portfolioArea div ul li.active{
+        opacity: 1; height: 150px;
+    }
+    section.portfolioArea div ul li:not(:last-child){
+        margin-bottom: 15px;
+    }
+    section.portfolioArea div ul li:nth-child(1){
+        background-image: url('../images/author_portfolio_01.png');
+    }
+    section.portfolioArea div ul li:nth-child(2){
+        background-image: url('../images/author_portfolio_02.png');
+    }
+    section.portfolioArea div ul li:nth-child(3){
+        background-image: url('../images/author_portfolio_03.png');
+    }
+    section.portfolioArea div ul li:nth-child(4){
+        background-image: url('../images/author_portfolio_04.png');
+    }
+    section.portfolioArea div ul li:nth-child(5){
+        background-image: url('../images/author_portfolio_05.png');
+    }
+    section.portfolioArea div ul li:nth-child(6){
+        background-image: url('../images/author_portfolio_06.png');
+    }
+    section.portfolioArea div ul li p{
+        line-height: 370px; background-color: rgba(0,0,0,0.5);
+        color: white; opacity: 0; transition-duration: 0.75s;
+    }
+    section.portfolioArea div ul li:hover p{
+        opacity: 1;
+    }
+    section.portfolioArea div > a{
+        background-color: #49cbcd; color: white; font-size: 15px;
+        text-align: center; width: 25%; margin: 0 auto;
+        line-height: 40px; border-radius: 5px; min-width: 230px;
+    }
+    /*  ? portfolioArea fin */
+
+    section.teamArea{
+        padding: 50px 2%;
+    }
+    section.teamArea h2{
+        color: #4e525d; font-size: 35px; margin-bottom: 55px;
+        text-align: center; font-weight: 400;
+    }
+    section.teamArea ul li{
+        display: block; padding: 0 1%;
+        text-align: center;
+    }
+    section.teamArea ul li:nth-child(-n+3){
+        margin-bottom: 50px;
+    }
+    section.teamArea ul li figure div{
+        position: relative; margin-bottom: 15px;
+    }
+    section.teamArea ul li figure div img{
+        width: 0%; transition-duration: 0.75s;
+    }
+    section.teamArea ul li figure div.active img{
+        width: 50%;
+    }
+    section.teamArea ul li figure div a{
+        position: absolute; left: 25%; top: 0; width: 50%;
+        border-radius: 50%; text-indent: -9999px;
+        background: url('../images/author_iconHoverPlus.png') no-repeat center / 42px;
+        height: 100%; background-color: #000; opacity: 0;
+        transition-duration: 0.75s;
+    }
+    section.teamArea ul li figure div:hover a{
+        opacity: 0.5;
+    }
+    section.teamArea ul li figure figcaption{
+        color: #4e525d;
+    }
+    section.teamArea ul li figure figcaption *:not(p){
+        display: block;
+    }
+    section.teamArea ul li figure figcaption strong{
+        font-weight: 400; font-size: 22px; margin-bottom: 10px;
+    }
+    section.teamArea ul li figure figcaption small{
+        font-size: 14px; margin-bottom: 15px;
+    }
+    section.teamArea ul li figure figcaption p{
+        font-size: 14px; line-height: 26px; width: 80%; margin: 0 auto;
+    }
+    /*  ? teamArea fin */
+    section.priceArea{
+        background-color: #f1f1f1; padding: 100px 2%;
+    }
+    section.priceArea div ul li{
+        display: block;
+    }
+    section.priceArea div > ul > li{
+        padding-bottom: 30px; width: 90%; margin: 0 auto;
+        background-color: #f8f9fb; text-align: center;
+    }
+    section.priceArea div > ul > li:not(:last-child){
+        margin-bottom: 35px;
+    }
+    section.priceArea div > ul > li h3{
+        background-color: #485460; color: white;
+        font-size: 26px; font-weight: 400; line-height: 70px;
+    }
+    section.priceArea div > ul > li strong{
+        display: block; color: #485460;
+        font-size: 20px; font-weight: 400; line-height: 70px;
+    }
+    section.priceArea div > ul > li ul{
+        margin-bottom: 30px;
+    }
+    section.priceArea div > ul > li ul li{
+        background-color: white; color: #8c9299; padding: 0; font-size: 0;
+        transition-property: padding, font-size;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+    }
+    section.priceArea div > ul > li ul li.active{
+        padding: 15px 0; font-size: 16px;
+    }
+    section.priceArea div > ul > li ul li:not(:last-child){
+        margin-bottom: 2px;
+    }
+    section.priceArea div > ul > li > a{
+        width: 50%; margin: 0 auto; background-color: #788492;
+        line-height: 45px; font-size: 17px; color: white;
+        border-radius: 5px;
+    }
+    section.priceArea div > ul > li:hover h3,
+    section.priceArea div > ul > li:hover > a{
+        background-color: #49cbcd;
+    }
+    /*  ? priceArea fin */
+
+    section.toSayArea{
+        padding: 70px 2% 220px;
+        position: relative; width: 94%;
+    }
+    section.toSayArea h2{
+        font-size: 30px; color: #4e525d; margin-bottom: 30px;
+        font-weight: 400; text-align: center;
+        box-sizing: border-box;
+    }
+    section.toSayArea ul{
+        position: relative;
+    }
+    section.toSayArea ul li{
+        display: block; position: absolute; left: 5%; top: 0;
+        width: 90%; transition-duration: 0.75s; opacity: 0;
+    }
+    section.toSayArea ul li.slideActive{
+        opacity: 1;
+    }
+    section.toSayArea ul li p{
+        max-width: 650px; width: 70%; margin: 0 auto;
+        line-height: 18px; font-size: 12px; text-align: center;
+        margin-bottom: 25px;
+    }
+    section.toSayArea ul li span{
+        display: block; text-align: center; font-size: 15px;
+        color: #9a8faf;
+    }
+    section.toSayArea > button:first-of-type{
+        left: 5%;
+        background: url('../images/author_icontoSayArrow_L.png') no-repeat left center / 10px auto;
+    }
+    section.toSayArea > button:last-of-type{
+        right: 5%;
+        background: url('../images/author_icontoSayArrow_R.png') no-repeat right center / 10px auto;
+    }
+    section.toSayArea > button{
+        position: absolute; top: 50%; text-indent: -9999px;
+        border: none; cursor: pointer;
+        background-color: transparent; width: 40px; height: 40px;
+    }
+}
+/*  * mobile */
+
+
+@media screen and (min-width: 767px) and (max-width: 1049px){
+    section.slideArea{
+        max-width: 1049px; margin: 0 auto 35px; position: relative;
+    }
+    section.slideArea ul.slider li figure img{
+        width: 100%;
+    }
+    section.slideArea ul.slider li figure figcaption{
+        position: absolute; top: 20%; left: 20%;
+        width: 60%; text-align: center; color: white;
+    }
+    section.slideArea ul.slider li figure figcaption h3{
+        font-size: 35px; font-weight: 500; margin-bottom: 25px;
+    }
+    section.slideArea ul.slider li figure figcaption p{
+        font-size: 15px; margin: 0 auto;
+        line-height: 21px; 
+    }
+    section.slideArea ul.slider li > a{
+        position: absolute; bottom: 25%; left: calc(50% - 75px);
+        width: 40%; max-width: 150px; text-align: center;
+        color: white; border: 2px solid white; border-radius: 5px;
+        line-height: 35px; font-size: 14px;
+    }
+    section.slideArea .customCont button{
+        position: absolute; width: 51px; height: 51px; border-radius: 50%;
+        border: none; background-repeat: no-repeat; background-size: 51px 51px;
+        top: calc(50% - 25px); z-index: 100; text-indent: -9999px;
+    }
+    section.slideArea .customCont button:nth-of-type(1){
+        background-image: url('../images/author_iconArrow_L.png');
+        left: 2.14%
+    }
+    section.slideArea .customCont button:nth-of-type(2){
+        background-image: url('../images/author_iconArrow_R.png');
+        right: 2.14%; 
+    }
+    section.slideArea ol.customPager{
+        position: absolute; width: 30%;
+        left: 35%; bottom: 15px; text-align: center;
+    }
+    section.slideArea ol.customPager li{
+        display: inline-block;
+    }
+    section.slideArea ol.customPager li:not(:first-child){
+        margin-left: 5px;
+    }
+    section.slideArea ol.customPager li a{
+        text-indent: -9999px; background-color: white;
+        width: 10px; height: 10px; border-radius: 50%;
+    }
+    section.slideArea ol.customPager li a.active,
+    section.slideArea ol.customPager li a:hover{
+        background-color: #49cbcd;
+    }
+    /*  ? slideArea fin */
+
+    section.workArea{
+        padding-top: 70px; padding-bottom: 100px;
+    }
+    section.workArea h2{
+        display: none;
+    }
+    section.workArea ul li{
+        width: 48%; padding: 125px 1% 0; float: left; display: block;
+        text-align: center; background-repeat: no-repeat; background-size: 0 0, 105px 105px;
+        background-position: center top;
+    }
+    section.workArea ul li.active{
+        background-size: 105px 105px, 105px 0px;
+        animation: workAni 0.75s ease-in-out;
+    }
+    section.workArea ul li:nth-child(-n+2){
+        margin-bottom: 45px;
+    }
+    section.workArea ul li:nth-child(1){
+        background-image: url('../images/author_iconRocket_MT.png'), url('../images/author_iconRocket_GR.png');
+    }
+    section.workArea ul li:nth-child(2){
+        background-image: url('../images/author_iconComputer_MT.png'), url('../images/author_iconComputer_GR.png');
+    }
+    section.workArea ul li:nth-child(3){
+        background-image: url('../images/author_iconLight_MT.png'), url('../images/author_iconLight_GR.png');
+    }
+    section.workArea ul li:nth-child(4){
+        background-image: url('../images/author_iconMobile_MT.png'), url('../images/author_iconMobile_GR.png');
+    }
+    section.workArea ul li *:not(a){
+        color: #4e525d;
+    }
+    section.workArea ul li strong{
+        font-weight: 400; font-size: 22px; line-height: 24px; margin-bottom: 25px;
+        display: block;
+    }
+    section.workArea ul li p{
+        font-size: 14px; line-height: 26px;
+        max-width: 330px; text-align: center; margin: 0 auto 15px;
+    }
+    section.workArea ul li a{
+        background-color: #49cbcd; width: 40%; color: white;
+        line-height: 30px; border-radius: 5px; margin: 0 auto;
+        font-size: 14px;
+    }
+    @keyframes workAni{
+        0%{
+            background-size: 105px 0, 105px 105px;
+        }
+        100%{
+            background-size: 105px 105px, 105px 0px;
+        }
+    }
+    /*  ? workArea fin */
+    section.portfolioArea{
+        background-color: #f1f1f1; padding: 50px 2% 100px;
+    }
+    section.portfolioArea div h2{
+        font-size: 42px; color: #4e525d; margin-bottom: 60px;
+        font-weight: 400; text-align: center;
+    }
+    section.portfolioArea div ul{
+        margin-bottom: 60px;
+    }
+    section.portfolioArea div ul li{
+        display: block; width: 32%; float: left; text-align: center;
+        background-size: cover; background-repeat: no-repeat;
+        opacity: 0; height: 0; overflow: hidden;
+        transition-property: opacity, height;
+        transition-duration:  0.75s;
+        transition-timing-function: ease-in-out;
+    }
+    section.portfolioArea div ul li.active{
+        opacity: 1; height: 370px;
+    }
+    section.portfolioArea div ul li:not(:nth-child(3n+1)){
+        margin-left: 2%;
+    }
+    section.portfolioArea div ul li:not(:nth-last-child(-n+3)){
+        margin-bottom: 30px;
+    }
+    section.portfolioArea div ul li:nth-child(1){
+        background-image: url('../images/author_portfolio_01.png');
+    }
+    section.portfolioArea div ul li:nth-child(2){
+        background-image: url('../images/author_portfolio_02.png');
+    }
+    section.portfolioArea div ul li:nth-child(3){
+        background-image: url('../images/author_portfolio_03.png');
+    }
+    section.portfolioArea div ul li:nth-child(4){
+        background-image: url('../images/author_portfolio_04.png');
+    }
+    section.portfolioArea div ul li:nth-child(5){
+        background-image: url('../images/author_portfolio_05.png');
+    }
+    section.portfolioArea div ul li:nth-child(6){
+        background-image: url('../images/author_portfolio_06.png');
+    }
+    section.portfolioArea div ul li p{
+        line-height: 370px; background-color: rgba(0,0,0,0.5);
+        color: white; opacity: 0; transition-duration: 0.75s;
+    }
+    section.portfolioArea div ul li:hover p{
+        opacity: 1;
+    }
+    section.portfolioArea div > a{
+        background-color: #49cbcd; color: white; font-size: 24px;
+        text-align: center; width: 25%; margin: 0 auto;
+        line-height: 60px; border-radius: 5px; min-width: 230px;
+    }
+    /*  ? portfolioArea fin */
+
+    section.teamArea{
+        padding: 70px 2% 100px;
+    }
+    section.teamArea h2{
+        color: #4e525d; font-size: 42px; margin-bottom: 80px;
+        text-align: center; font-weight: 400;
+    }
+    section.teamArea ul li{
+        display: block; float: left; width: 48%; padding: 0 1%;
+        text-align: center;
+    }
+    section.teamArea ul li:nth-child(-n+2){
+        margin-bottom: 50px;
+    }
+    section.teamArea ul li figure div{
+        position: relative; margin-bottom: 15px;
+    }
+    section.teamArea ul li figure div img{
+        width: 0%; transition-duration: 0.75s;
+    }
+    section.teamArea ul li figure div.active img{
+        width: 50%;
+    }
+    section.teamArea ul li figure div a{
+        position: absolute; left: 25%; top: 0; width: 50%;
+        border-radius: 50%; text-indent: -9999px;
+        background: url('../images/author_iconHoverPlus.png') no-repeat center / 42px;
+        height: 100%; background-color: #000; opacity: 0;
+        transition-duration: 0.75s;
+    }
+    section.teamArea ul li figure div:hover a{
+        opacity: 0.5;
+    }
+    section.teamArea ul li figure figcaption{
+        color: #4e525d;
+    }
+    section.teamArea ul li figure figcaption *:not(p){
+        display: block;
+    }
+    section.teamArea ul li figure figcaption strong{
+        font-weight: 400; font-size: 22px; margin-bottom: 10px;
+    }
+    section.teamArea ul li figure figcaption small{
+        font-size: 14px; margin-bottom: 15px;
+    }
+    section.teamArea ul li figure figcaption p{
+        font-size: 14px; line-height: 26px; width: 80%; margin: 0 auto;
+    }
+    /*  ? teamArea fin */
+    section.priceArea{
+        background-color: #f1f1f1; padding: 100px 2%;
+    }
+    section.priceArea div ul li{
+        display: block;
+    }
+    section.priceArea div > ul > li{
+        width: 32%; float: left; padding-bottom: 30px;
+        background-color: #f8f9fb; text-align: center;
+    }
+    section.priceArea div > ul > li:not(:first-child){
+        margin-left: 2%;
+    }
+    section.priceArea div > ul > li h3{
+        background-color: #485460; color: white;
+        font-size: 26px; font-weight: 400; line-height: 70px;
+    }
+    section.priceArea div > ul > li strong{
+        display: block; color: #485460;
+        font-size: 20px; font-weight: 400; line-height: 70px;
+    }
+    section.priceArea div > ul > li ul{
+        margin-bottom: 30px;
+    }
+    section.priceArea div > ul > li ul li{
+        background-color: white; color: #8c9299; padding: 0; font-size: 0;
+        transition-property: padding, font-size;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+    }
+    section.priceArea div > ul > li ul li.active{
+        padding: 15px 0; font-size: 16px;
+    }
+    section.priceArea div > ul > li ul li:not(:last-child){
+        margin-bottom: 2px;
+    }
+    section.priceArea div > ul > li > a{
+        width: 50%; margin: 0 auto; background-color: #788492;
+        line-height: 45px; font-size: 17px; color: white;
+        border-radius: 5px;
+    }
+    section.priceArea div > ul > li:hover h3,
+    section.priceArea div > ul > li:hover > a{
+        background-color: #49cbcd;
+    }
+    /*  ? priceArea fin */
+
+    section.toSayArea{
+        padding: 70px 2% 250px;
+        position: relative;
+    }
+    section.toSayArea h2{
+        font-size: 42px; color: #4e525d; margin-bottom: 30px;
+        font-weight: 400; text-align: center;
+        box-sizing: border-box;
+    }
+    section.toSayArea ul{
+        position: relative;
+    }
+    section.toSayArea ul li{
+        display: block; position: absolute; left: 0; top: 0;
+        width: 100%; transition-duration: 0.75s; opacity: 0;
+    }
+    section.toSayArea ul li.slideActive{
+        opacity: 1;
+    }
+    section.toSayArea ul li p{
+        max-width: 750px; width: 70%; margin: 0 auto;
+        line-height: 30px; font-size: 18px; text-align: center;
+        margin-bottom: 35px;
+    }
+    section.toSayArea ul li span{
+        display: block; text-align: center; font-size: 21px;
+        color: #9a8faf;
+    }
+    section.toSayArea > button:first-of-type{
+        left: 2%;
+        background: url('../images/author_icontoSayArrow_L.png') no-repeat left center / 18px auto;
+    }
+    section.toSayArea > button:last-of-type{
+        right: 2%;
+        background: url('../images/author_icontoSayArrow_R.png') no-repeat right center / 18px auto;
+    }
+    section.toSayArea > button{
+        position: absolute; top: 50%; text-indent: -9999px;
+        border: none; cursor: pointer;
+        background-color: transparent; width: 40px; height: 40px;
+    }
+}
+/*  * tablet */
+
+@media screen and (min-width: 1050px){
+    section.slideArea{
+        max-width: 1400px; margin: 0 auto 35px; position: relative;
+    }
+    section.slideArea ul.slider li figure img{
+        width: 100%;
+    }
+    section.slideArea ul.slider li figure figcaption{
+        position: absolute; top: 25%; left: 25%;
+        width: 50%; text-align: center; color: white;
+    }
+    section.slideArea ul.slider li figure figcaption h3{
+        font-size: 3.23vw; font-weight: 500; margin-bottom: 45px;
+    }
+    section.slideArea ul.slider li figure figcaption p{
+        font-size: 1.2vw; margin: 0 auto;
+        line-height: 37px; 
+    }
+    section.slideArea ul.slider li > a{
+        position: absolute; bottom: 15%; left: 41.75%;
+        width: 16.5%; max-width: 232px; min-width: 150px; text-align: center;
+        color: white; border: 3px solid white; border-radius: 5px;
+        line-height: 45px; font-size: 18px;
+    }
+    section.slideArea .customCont button{
+        position: absolute; width: 51px; height: 51px; border-radius: 50%;
+        border: none; background-repeat: no-repeat; background-size: 51px 51px;
+        top: calc(50% - 51px); z-index: 100; text-indent: -9999px;
+    }
+    section.slideArea .customCont button:nth-of-type(1){
+        background-image: url('../images/author_iconArrow_L.png');
+        left: 2.14%
+    }
+    section.slideArea .customCont button:nth-of-type(2){
+        background-image: url('../images/author_iconArrow_R.png');
+        right: 2.14%; 
+    }
+    section.slideArea ol.customPager{
+        position: absolute; width: 30%;
+        left: 35%; bottom: 30px; text-align: center;
+    }
+    section.slideArea ol.customPager li{
+        display: inline-block;
+    }
+    section.slideArea ol.customPager li:not(:first-child){
+        margin-left: 5px;
+    }
+    section.slideArea ol.customPager li a{
+        text-indent: -9999px; background-color: white;
+        width: 10px; height: 10px; border-radius: 50%;
+    }
+    section.slideArea ol.customPager li a.active,
+    section.slideArea ol.customPager li a:hover{
+        background-color: #49cbcd;
+    }
+    /*  ? slideArea fin */
+
+    section.workArea{
+        padding-top: 70px; padding-bottom: 100px;
+    }
+    section.workArea h2{
+        display: none;
+    }
+    section.workArea ul li{
+        width: 23%; padding: 155px 1% 0; float: left; display: block;
+        text-align: center; background-repeat: no-repeat; background-size: 0 0, 105px 105px;
+        background-position: center top;
+    }
+    section.workArea ul li.active{
+        background-size: 105px 105px, 105px 0px;
+        animation: workAni 0.75s ease-in-out;
+    }
+    section.workArea ul li:nth-child(1){
+        background-image: url('../images/author_iconRocket_MT.png'), url('../images/author_iconRocket_GR.png');
+    }
+    section.workArea ul li:nth-child(2){
+        background-image: url('../images/author_iconComputer_MT.png'), url('../images/author_iconComputer_GR.png');
+    }
+    section.workArea ul li:nth-child(3){
+        background-image: url('../images/author_iconLight_MT.png'), url('../images/author_iconLight_GR.png');
+    }
+    section.workArea ul li:nth-child(4){
+        background-image: url('../images/author_iconMobile_MT.png'), url('../images/author_iconMobile_GR.png');
+    }
+    section.workArea ul li *:not(a){
+        color: #4e525d;
+    }
+    section.workArea ul li strong{
+        font-weight: 400; font-size: 22px; line-height: 24px; margin-bottom: 25px;
+        display: block;
+    }
+    section.workArea ul li p{
+        font-size: 14px; line-height: 26px; margin-bottom: 15px;
+    }
+    section.workArea ul li a{
+        background-color: #49cbcd; width: 40%; color: white;
+        line-height: 30px; border-radius: 5px; margin: 0 auto;
+        font-size: 14px;
+    }
+    @keyframes workAni{
+        0%{
+            background-size: 105px 0, 105px 105px;
+        }
+        100%{
+            background-size: 105px 105px, 105px 0px;
+        }
+    }
+    /*  ? workArea fin */
+    section.portfolioArea{
+        background-color: #f1f1f1; padding: 50px 2% 100px;
+    }
+    section.portfolioArea div h2{
+        font-size: 42px; color: #4e525d; margin-bottom: 60px;
+        font-weight: 400; text-align: center;
+    }
+    section.portfolioArea div ul{
+        margin-bottom: 60px;
+    }
+    section.portfolioArea div ul li{
+        display: block; width: 32%; float: left; text-align: center;
+        background-size: cover; background-repeat: no-repeat;
+        opacity: 0; height: 0; overflow: hidden;
+        transition-property: opacity, height;
+        transition-duration:  0.75s;
+        transition-timing-function: ease-in-out;
+    }
+    section.portfolioArea div ul li.active{
+        opacity: 1; height: 370px;
+    }
+    section.portfolioArea div ul li:not(:nth-child(3n+1)){
+        margin-left: 2%;
+    }
+    section.portfolioArea div ul li:not(:nth-last-child(-n+3)){
+        margin-bottom: 30px;
+    }
+    section.portfolioArea div ul li:nth-child(1){
+        background-image: url('../images/author_portfolio_01.png');
+    }
+    section.portfolioArea div ul li:nth-child(2){
+        background-image: url('../images/author_portfolio_02.png');
+    }
+    section.portfolioArea div ul li:nth-child(3){
+        background-image: url('../images/author_portfolio_03.png');
+    }
+    section.portfolioArea div ul li:nth-child(4){
+        background-image: url('../images/author_portfolio_04.png');
+    }
+    section.portfolioArea div ul li:nth-child(5){
+        background-image: url('../images/author_portfolio_05.png');
+    }
+    section.portfolioArea div ul li:nth-child(6){
+        background-image: url('../images/author_portfolio_06.png');
+    }
+    section.portfolioArea div ul li p{
+        line-height: 370px; background-color: rgba(0,0,0,0.5);
+        color: white; opacity: 0; transition-duration: 0.75s;
+    }
+    section.portfolioArea div ul li:hover p{
+        opacity: 1;
+    }
+    section.portfolioArea div > a{
+        background-color: #49cbcd; color: white; font-size: 24px;
+        text-align: center; width: 25%; margin: 0 auto;
+        line-height: 60px; border-radius: 5px; min-width: 230px;
+    }
+    /*  ? portfolioArea fin */
+
+    section.teamArea{
+        padding: 70px 2% 100px;
+    }
+    section.teamArea h2{
+        color: #4e525d; font-size: 42px; margin-bottom: 80px;
+        text-align: center; font-weight: 400;
+    }
+    section.teamArea ul li{
+        display: block; float: left; width: 23%; padding: 0 1%;
+        text-align: center;
+    }
+    section.teamArea ul li figure div{
+        position: relative; margin-bottom: 35px;
+    }
+    section.teamArea ul li figure div img{
+        width: 0%; transition-duration: 0.75s;
+    }
+    section.teamArea ul li figure div.active img{
+        width: 80%;
+    }
+    section.teamArea ul li figure div a{
+        position: absolute; left: 10%; top: 0; width: 80%;
+        border-radius: 50%; text-indent: -9999px;
+        background: url('../images/author_iconHoverPlus.png') no-repeat center / 42px;
+        height: 100%; background-color: #000; opacity: 0;
+        transition-duration: 0.75s;
+    }
+    section.teamArea ul li figure div:hover a{
+        opacity: 0.5;
+    }
+    section.teamArea ul li figure figcaption{
+        color: #4e525d;
+    }
+    section.teamArea ul li figure figcaption *:not(p){
+        display: block;
+    }
+    section.teamArea ul li figure figcaption strong{
+        font-weight: 400; font-size: 22px; margin-bottom: 5px;
+    }
+    section.teamArea ul li figure figcaption small{
+        font-size: 14px; margin-bottom: 30px;
+    }
+    section.teamArea ul li figure figcaption p{
+        font-size: 14px; line-height: 26px;
+    }
+    /*  ? teamArea fin */
+    section.priceArea{
+        background-color: #f1f1f1; padding: 100px 2%;
+    }
+    section.priceArea div ul li{
+        display: block;
+    }
+    section.priceArea div > ul > li{
+        width: 32%; float: left; padding-bottom: 30px;
+        background-color: #f8f9fb; text-align: center;
+    }
+    section.priceArea div > ul > li:not(:first-child){
+        margin-left: 2%;
+    }
+    section.priceArea div > ul > li h3{
+        background-color: #485460; color: white;
+        font-size: 26px; font-weight: 400; line-height: 70px;
+    }
+    section.priceArea div > ul > li strong{
+        display: block; color: #485460;
+        font-size: 20px; font-weight: 400; line-height: 70px;
+    }
+    section.priceArea div > ul > li ul{
+        margin-bottom: 30px;
+    }
+    section.priceArea div > ul > li ul li{
+        background-color: white; color: #8c9299; padding: 0; font-size: 0;
+        transition-property: padding, font-size;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+    }
+    section.priceArea div > ul > li ul li.active{
+        padding: 15px 0; font-size: 16px;
+    }
+    section.priceArea div > ul > li ul li:not(:last-child){
+        margin-bottom: 2px;
+    }
+    section.priceArea div > ul > li > a{
+        width: 50%; margin: 0 auto; background-color: #788492;
+        line-height: 45px; font-size: 17px; color: white;
+        border-radius: 5px;
+    }
+    section.priceArea div > ul > li:hover h3,
+    section.priceArea div > ul > li:hover > a{
+        background-color: #49cbcd;
+    }
+    /*  ? priceArea fin */
+
+    section.toSayArea{
+        padding: 100px 2% 250px;
+        position: relative;
+    }
+    section.toSayArea h2{
+        font-size: 42px; color: #4e525d; margin-bottom: 60px;
+        font-weight: 400; text-align: center;
+        box-sizing: border-box;
+    }
+    section.toSayArea ul{
+        position: relative;
+    }
+    section.toSayArea ul li{
+        display: block; position: absolute; left: 0; top: 0;
+        width: 100%; transition-duration: 0.75s; opacity: 0;
+    }
+    section.toSayArea ul li.slideActive{
+        opacity: 1;
+    }
+    section.toSayArea ul li p{
+        max-width: 645px; width: 50%; margin: 0 auto;
+        line-height: 30px; font-size: 18px; text-align: center;
+        margin-bottom: 35px;
+    }
+    section.toSayArea ul li span{
+        display: block; text-align: center; font-size: 21px;
+        color: #9a8faf;
+    }
+    section.toSayArea > button:first-of-type{
+        left: 2%;
+        background: url('../images/author_icontoSayArrow_L.png') no-repeat left center / 18px auto;
+    }
+    section.toSayArea > button:last-of-type{
+        right: 2%;
+        background: url('../images/author_icontoSayArrow_R.png') no-repeat right center / 18px auto;
+    }
+    section.toSayArea > button{
+        position: absolute; top: 50%; text-indent: -9999px;
+        border: none; cursor: pointer;
+        background-color: transparent; width: 40px; height: 40px;
+    }
+}
+/*  * desktop */

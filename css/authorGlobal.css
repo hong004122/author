@@ -1,0 +1,349 @@
+*{
+    font-family: Open Sans;
+}
+a{
+    display: block; text-decoration: none;
+}
+.floatCancel:after{
+    content: ''; display: block; clear: both;
+}
+
+
+@media screen and (max-width: 767px){
+    header,
+    section.workArea,
+    section.portfolioArea div,
+    section.teamArea,
+    section.priceArea div,
+    section.toSayArea,
+    footer > div{
+        max-width: 450px; margin: 0 auto;
+    }
+    header{
+        width: 96%; padding: 0 2%; position: relative;
+    }
+    header h1{
+        float: left; line-height: 100px; width: 50%;
+        background: url('../images/author_logo.png') no-repeat left center / auto 37px; 
+        text-indent: -9999px; margin: 0;
+    }
+    header span.mobNav{
+        float: right; display: block; width: 50%; font-size: 30px; padding: 35px 0;
+        text-align: right;;
+    }
+    header nav{
+        clear: both; position: absolute; z-index: 1000; right: 0; top: 80px;
+        background-color: #fff; width: 70%; text-align: center;
+        height: 0; overflow-y: hidden; transition-duration: 0.75s;
+    }
+    header nav.active{
+        height: 300px; border: 2px solid #49cbcd;
+    }
+    header nav ul li{
+        display: block; padding: 0 2%;
+    }
+    header nav ul li:hover{
+        background-color: #f8f9fb; border-bottom: 3px solid #49cbcd;
+    }
+    header nav ul li a{
+        line-height: 50px; font-size: 15px; color: #484c55; 
+    }
+    header nav ul li:hover a{
+        color: #49cbcd; 
+    }
+    
+    footer{
+        background: url('../images/author_bg.png') no-repeat left top / cover;
+        padding: 40px 2%;
+    }
+    footer > div h2{
+        text-align: center; color: white; font-size: 42px; font-weight: 400;
+        margin-bottom: 45px;
+    }
+    footer > div > div:first-of-type{
+        color: white; text-align: center; margin-bottom: 35px;
+    }
+    footer > div > div:first-of-type h3{
+        font-size: 20px; font-weight: 400; margin-bottom: 15px;
+    }
+    footer > div > div:first-of-type p{
+        opacity: 0.5; font-size: 14px; line-height: 21px;
+        max-width: 330px; margin-bottom: 35px;
+    }
+    footer > div > div:first-of-type ul{
+        margin-bottom: 25px;
+    }
+    footer > div > div:first-of-type ul li{
+        display: inline-block;
+        /* text-indent: -9999px; */
+    }
+    footer > div > div:first-of-type ul li a{
+        background-repeat: no-repeat; width: 42px; line-height: 42px;
+        text-indent: -9999px;
+    }
+    footer > div > div:first-of-type ul li:not(:first-child){
+        margin-left: 15px;
+    }
+    footer > div > div:first-of-type ul li:nth-child(1) a{
+        background-image: url('../images/author_iconSNS_face.png');
+    }
+    footer > div > div:first-of-type ul li:nth-child(2) a{
+        background-image: url('../images/author_iconSNS_twitter.png');
+    }
+    footer > div > div:first-of-type ul li:nth-child(3) a{
+        background-image: url('../images/author_iconSNS_google.png');
+    }
+    footer > div > div:first-of-type > a{
+        color: #bface2; font-size: 14px; line-height: 24px;
+    }
+    footer > div > div:last-of-type form fieldset{
+        text-align: right;
+    }
+    footer > div > div:last-of-type form fieldset *{
+        border-radius: 3px;
+    }
+    footer > div > div:last-of-type form fieldset input:not([type="submit"]){
+        display: block; width: 100%; border: none;
+        box-sizing: border-box; padding: 15px 2%;
+    }
+    footer > div > div:last-of-type form fieldset input[type="text"]{
+        margin-bottom: 15px;
+    }
+    footer > div > div:last-of-type form fieldset textarea{
+        width: 96%; height: 150px; margin-top: 15px;
+        padding: 15px 2%; margin-bottom: 20px; resize: none;
+    }
+    footer > div > div:last-of-type form fieldset input::placeholder,
+    footer > div > div:last-of-type form fieldset textarea::placeholder{
+        color: #c1c1c1; font-size: 16px;
+    }
+    footer > div > div:last-of-type form fieldset input[type="submit"]{
+        width: 40%; padding: 15px 0; border: none; color: white;
+        background-color: #49cbcd; font-size: 16px; cursor: pointer;
+    }
+}
+/*  * mobile */
+
+@media screen and (min-width: 767px) and (max-width: 1049px){
+    header,
+    section.workArea,
+    section.portfolioArea div,
+    section.teamArea,
+    section.priceArea div,
+    section.toSayArea,
+    footer > div{
+        max-width: 950px; margin: 0 auto;
+    }
+    header{
+        width: 96%; padding: 0 2%;
+    }
+    header h1{
+        float: left; line-height: 100px; width: 30%;
+        background: url('../images/author_logo.png') no-repeat left center / auto 37px; 
+        text-indent: -9999px;
+    }
+    header .mobNav{
+        display: none;
+    }
+    header nav{
+        float: right; width: 70%; text-align: right;
+    }
+    header nav ul li{
+        display: inline-block; padding: 0 2%;
+    }
+    header nav ul li:hover{
+        background-color: #f8f9fb; border-bottom: 3px solid #49cbcd;
+    }
+    header nav ul li a{
+        line-height: 97px; font-size: 15px; color: #484c55;
+    }
+    header nav ul li:hover a{
+        color: #49cbcd; 
+    }
+    
+    footer{
+        background: url('../images/author_bg.png') no-repeat left top / cover;
+        padding: 70px 2%;
+    }
+    footer > div h2{
+        text-align: center; color: white; font-size: 42px; font-weight: 400;
+        margin-bottom: 100px;
+    }
+    footer > div > *:not(h2){
+        width: 50%; float: left;
+    }
+    footer > div > div:first-of-type{
+        color: white;
+    }
+    footer > div > div:first-of-type h3{
+        font-size: 24px; font-weight: 400; margin-bottom: 15px;
+    }
+    footer > div > div:first-of-type p{
+        opacity: 0.5; font-size: 14px; line-height: 21px;
+        max-width: 330px; margin-bottom: 35px;
+    }
+    footer > div > div:first-of-type ul{
+        margin-bottom: 20px;
+    }
+    footer > div > div:first-of-type ul li{
+        display: inline-block;
+        /* text-indent: -9999px; */
+    }
+    footer > div > div:first-of-type ul li a{
+        background-repeat: no-repeat; width: 42px; line-height: 42px;
+        text-indent: -9999px;
+    }
+    footer > div > div:first-of-type ul li:not(:first-child){
+        margin-left: 15px;
+    }
+    footer > div > div:first-of-type ul li:nth-child(1) a{
+        background-image: url('../images/author_iconSNS_face.png');
+    }
+    footer > div > div:first-of-type ul li:nth-child(2) a{
+        background-image: url('../images/author_iconSNS_twitter.png');
+    }
+    footer > div > div:first-of-type ul li:nth-child(3) a{
+        background-image: url('../images/author_iconSNS_google.png');
+    }
+    footer > div > div:first-of-type > a{
+        color: #bface2; font-size: 14px; line-height: 24px;
+    }
+    footer > div > div:last-of-type form fieldset{
+        text-align: right;
+    }
+    footer > div > div:last-of-type form fieldset *{
+        border-radius: 3px;
+    }
+    footer > div > div:last-of-type form fieldset input:not([type="submit"]){
+        display: block; width: 48.5%; border: none; float: left;
+        box-sizing: border-box; padding: 15px 2%;
+    }
+    footer > div > div:last-of-type form fieldset input[type="email"]{
+        margin-left: 3%;
+    }
+    footer > div > div:last-of-type form fieldset textarea{
+        width: 96%; height: 150px; margin-top: 30px;
+        padding: 15px 2%; margin-bottom: 30px; resize: none;
+    }
+    footer > div > div:last-of-type form fieldset input::placeholder,
+    footer > div > div:last-of-type form fieldset textarea::placeholder{
+        color: #c1c1c1; font-size: 16px;
+    }
+    footer > div > div:last-of-type form fieldset input[type="submit"]{
+        width: 30%; padding: 15px 0; border: none; color: white;
+        background-color: #49cbcd; font-size: 22px; cursor: pointer;
+    }
+}
+/*  * tablet */
+
+@media screen and (min-width: 1050px){
+    header,
+    section.workArea,
+    section.portfolioArea div,
+    section.teamArea,
+    section.priceArea div,
+    section.toSayArea,
+    footer > div{
+        max-width: 1170px; margin: 0 auto;
+    }
+    header{
+        width: 96%; padding: 0 2%;
+    }
+    header h1{
+        float: left; line-height: 100px; width: 30%;
+        background: url('../images/author_logo.png') no-repeat left center / auto 37px; 
+        text-indent: -9999px;
+    }
+    header .mobNav{
+        display: none;
+    }
+    header nav{
+        float: right; width: 70%; text-align: right;
+    }
+    header nav ul li{
+        display: inline-block; padding: 0 2%;
+    }
+    header nav ul li:hover{
+        background-color: #f8f9fb; border-bottom: 3px solid #49cbcd;
+    }
+    header nav ul li a{
+        line-height: 97px; font-size: 15px; color: #484c55;
+    }
+    header nav ul li:hover a{
+        color: #49cbcd; 
+    }
+    
+    footer{
+        background: url('../images/author_bg.png') no-repeat left top / cover;
+        padding: 100px 2%;
+    }
+    footer > div h2{
+        text-align: center; color: white; font-size: 42px; font-weight: 400;
+        margin-bottom: 100px;
+    }
+    footer > div > *:not(h2){
+        width: 50%; float: left;
+    }
+    footer > div > div:first-of-type{
+        color: white;
+    }
+    footer > div > div:first-of-type h3{
+        font-size: 24px; font-weight: 400; margin-bottom: 15px;
+    }
+    footer > div > div:first-of-type p{
+        opacity: 0.5; font-size: 14px; line-height: 21px;
+        max-width: 430px; margin-bottom: 35px;
+    }
+    footer > div > div:first-of-type ul{
+        margin-bottom: 20px;
+    }
+    footer > div > div:first-of-type ul li{
+        display: inline-block;
+        /* text-indent: -9999px; */
+    }
+    footer > div > div:first-of-type ul li a{
+        background-repeat: no-repeat; width: 42px; line-height: 42px;
+        text-indent: -9999px;
+    }
+    footer > div > div:first-of-type ul li:not(:first-child){
+        margin-left: 15px;
+    }
+    footer > div > div:first-of-type ul li:nth-child(1) a{
+        background-image: url('../images/author_iconSNS_face.png');
+    }
+    footer > div > div:first-of-type ul li:nth-child(2) a{
+        background-image: url('../images/author_iconSNS_twitter.png');
+    }
+    footer > div > div:first-of-type ul li:nth-child(3) a{
+        background-image: url('../images/author_iconSNS_google.png');
+    }
+    footer > div > div:first-of-type > a{
+        color: #bface2; font-size: 14px; line-height: 24px;
+    }
+    footer > div > div:last-of-type form fieldset{
+        text-align: right;
+    }
+    footer > div > div:last-of-type form fieldset *{
+        border-radius: 3px;
+    }
+    footer > div > div:last-of-type form fieldset input:not([type="submit"]){
+        display: block; width: 48.5%; border: none; float: left;
+        box-sizing: border-box; padding: 15px 2%;
+    }
+    footer > div > div:last-of-type form fieldset input[type="email"]{
+        margin-left: 3%;
+    }
+    footer > div > div:last-of-type form fieldset textarea{
+        width: 96%; height: 150px; margin-top: 30px;
+        padding: 15px 2%; margin-bottom: 30px; resize: none;
+    }
+    footer > div > div:last-of-type form fieldset input::placeholder,
+    footer > div > div:last-of-type form fieldset textarea::placeholder{
+        color: #c1c1c1; font-size: 16px;
+    }
+    footer > div > div:last-of-type form fieldset input[type="submit"]{
+        width: 30%; padding: 15px 0; border: none; color: white;
+        background-color: #49cbcd; font-size: 22px; cursor: pointer;
+    }
+}
+/*  * desktop */
